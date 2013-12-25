@@ -21,6 +21,8 @@
 		32E0D73C186B1DFE000C28E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E0D71E186B1DFE000C28E5 /* UIKit.framework */; };
 		32E0D744186B1DFE000C28E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32E0D742186B1DFE000C28E5 /* InfoPlist.strings */; };
 		32E0D746186B1DFE000C28E5 /* Movie_io_APITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E0D745186B1DFE000C28E5 /* Movie_io_APITests.m */; };
+		32E0D751186B1E1B000C28E5 /* GGLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E0D750186B1E1B000C28E5 /* GGLTableViewController.m */; };
+		32E0D75A186B2BCF000C28E5 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E0D759186B2BCF000C28E5 /* default.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		32E0D741186B1DFE000C28E5 /* Movie.io APITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Movie.io APITests-Info.plist"; sourceTree = "<group>"; };
 		32E0D743186B1DFE000C28E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32E0D745186B1DFE000C28E5 /* Movie_io_APITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movie_io_APITests.m; sourceTree = "<group>"; };
+		32E0D74F186B1E1B000C28E5 /* GGLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGLTableViewController.h; sourceTree = "<group>"; };
+		32E0D750186B1E1B000C28E5 /* GGLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGLTableViewController.m; sourceTree = "<group>"; };
+		32E0D759186B2BCF000C28E5 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,9 @@
 				32E0D72C186B1DFE000C28E5 /* Main.storyboard */,
 				32E0D72F186B1DFE000C28E5 /* GGLViewController.h */,
 				32E0D730186B1DFE000C28E5 /* GGLViewController.m */,
+				32E0D74F186B1E1B000C28E5 /* GGLTableViewController.h */,
+				32E0D750186B1E1B000C28E5 /* GGLTableViewController.m */,
+				32E0D759186B2BCF000C28E5 /* default.jpg */,
 				32E0D732186B1DFE000C28E5 /* Images.xcassets */,
 				32E0D721186B1DFE000C28E5 /* Supporting Files */,
 			);
@@ -232,6 +240,7 @@
 				32E0D733186B1DFE000C28E5 /* Images.xcassets in Resources */,
 				32E0D725186B1DFE000C28E5 /* InfoPlist.strings in Resources */,
 				32E0D72E186B1DFE000C28E5 /* Main.storyboard in Resources */,
+				32E0D75A186B2BCF000C28E5 /* default.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32E0D751186B1E1B000C28E5 /* GGLTableViewController.m in Sources */,
 				32E0D731186B1DFE000C28E5 /* GGLViewController.m in Sources */,
 				32E0D727186B1DFE000C28E5 /* main.m in Sources */,
 				32E0D72B186B1DFE000C28E5 /* GGLAppDelegate.m in Sources */,
