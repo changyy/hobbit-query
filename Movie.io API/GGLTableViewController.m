@@ -57,11 +57,6 @@
     if (self.refreshControl) {
         [self.refreshControl addTarget:self action:@selector(queryBegin) forControlEvents:UIControlEventValueChanged];
     }
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
     [self queryBegin];
 }
 
