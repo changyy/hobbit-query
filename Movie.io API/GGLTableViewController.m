@@ -122,10 +122,13 @@
         }
     }
 
-    if (self.refreshControl) {
-        [self.refreshControl endRefreshing];
-    }
-    [self.tableView reloadData];
+    __weak GGLTableViewController *weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (weakSelf.refreshControl) {
+            [weakSelf.refreshControl endRefreshing];
+        }
+        [weakSelf.tableView reloadData];
+    });
 }
 
 
@@ -173,7 +176,9 @@
                         NSLog(@"dispatch_async: %@, image: %@", [weakSelf.items[indexPath.row] valueForKeyPath:@"poster.urls.w92"], image);
                         if (image) {
                             weakSelf.cacheImage[pattern] = image;
-                            [weakSelf.tableView reloadData];
+                            dispatch_async(dispatch_get_main_queue(), ^{
+                                [weakSelf.tableView reloadData];
+                            });
                         }
                     });
                 } else {
